@@ -25,7 +25,7 @@
 
 ## 🧪 Live Demo
 
-> Try it here: [https://your-subtrackr-link.vercel.app](https://your-subtrackr-link.vercel.app)
+> Try it here:[ [https://your-subtrackr-link.vercel.app](https://your-subtrackr-link.vercel.app)](https://sub-trackr-ten.vercel.app/)
 
 ---
 
