@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%; /* Light Gray - almost white */
+    --foreground: 210 40% 3.9%; /* Dark Gray */
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 3.9%;
+    --primary: 180 70% 35%; /* Teal */
+    --primary-foreground: 180 70% 95%; /* Light text for Teal */
+    --secondary: 210 40% 90%; /* Light Gray for secondary elements */
+    --secondary-foreground: 210 40% 20%; /* Darker text for Light Gray elements */
+    --muted: 210 40% 90%; /* Muted often similar to secondary */
+    --muted-foreground: 210 40% 45.1%; /* Muted foreground text */
+    --accent: 120 60% 45%; /* Lime Green */
+    --accent-foreground: 120 60% 95%; /* Light text for Lime Green */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 85%; /* Slightly darker gray for borders */
+    --input: 210 40% 85%;
+    --ring: 180 70% 45%; /* Teal for focus rings */
+    --chart-1: 180 70% 50%; /* Teal variant */
+    --chart-2: 120 60% 50%; /* Lime Green variant */
+    --chart-3: 210 30% 60%; /* Neutral Gray variant */
+    --chart-4: 43 74% 66%; /* Orange - keep one for variety */
+    --chart-5: 27 87% 67%; /* Coral - keep one for variety */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 210 40% 3.9%; /* Dark Gray */
+    --foreground: 210 40% 98%; /* Light Gray - almost white */
+    --card: 210 40% 3.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 210 40% 3.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 180 70% 55%; /* Lighter Teal */
+    --primary-foreground: 180 70% 15%; /* Dark text for Lighter Teal */
+    --secondary: 210 40% 10%; /* Darker Gray */
+    --secondary-foreground: 210 40% 80%; /* Lighter text */
+    --muted: 210 40% 10%;
+    --muted-foreground: 210 40% 63.9%;
+    --accent: 120 60% 55%; /* Lighter Lime Green */
+    --accent-foreground: 120 60% 15%; /* Dark text */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 15%;
+    --input: 210 40% 15%;
+    --ring: 180 70% 65%; /* Lighter Teal for focus rings */
+    --chart-1: 180 70% 45%; /* Teal variant */
+    --chart-2: 120 60% 45%; /* Lime Green variant */
+    --chart-3: 210 30% 50%; /* Neutral Gray variant */
+    --chart-4: 43 74% 56%;
+    --chart-5: 27 87% 57%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
